@@ -378,12 +378,8 @@ class Gamelogic:
             print('Вы победили!!!')
             return True
 
-    def show(self):
-        self.__bot.show_player_field()
-
 if __name__ == "__main__":
     game = Gamelogic()
-    game.show()
     while game.check_win() is None:
         game.do_turn_player()
         game.do_turn_bot()
